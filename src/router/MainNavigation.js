@@ -2,18 +2,19 @@ import React from "react";
 import { View, ScrollView} from "react-native";
 import { createDrawerNavigator } from "react-navigation";
 import HeaderDrawerComponent from "../components/HeaderDrawerComponent";
-import HomeScreen from "../features/main/HomeScreen";
+import HomeScreen from "../features/main/home/HomeScreen";
 import colors from "../theme/Colors";
 import { Divider, Icon } from "react-native-elements";
 import R from "../resources/R";
 import HeaderDrawerBodyMenu from "../components/HeaderDrawerBodyMenu";
+import { HomeTabNavigation } from "./HomeTabNavigation";
 
 export const MainNavigation = createDrawerNavigator(
   {
-    HomeScreen: HomeScreen
+    HomeTabNavigation: HomeTabNavigation
   },
   {
-    initialRouteName: "HomeScreen",
+    initialRouteName: "HomeTabNavigation",
     drawerWidth: 320,
     contentComponent: () => {
       return (

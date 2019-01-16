@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 
-export default class HomeScreen extends Component {
+export default class NotificationScreen extends Component {
     render() {
         return (
             <Text>
-                Home Screen
+                NotificationScreen
             </Text>
         );
     }
